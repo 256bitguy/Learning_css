@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Force Inherit CSS Example</title>
+    <style>
+      .parent {
+        font-family: Arial;
+        font-size: 18px;
+      }
+      
+      .child {
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: bold;
+      }
+      
+      .grandchild {
+        font-family: revert;
+        font-size: revert;
+        font-weight: revert;
+      }
+      
+      .force-inherit {
+        font-family: Arial inherit;
+        font-size: 16px inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Force Inherit CSS Example</h1>
+    <div class="parent">
+      <p>This text is in the parent element and has Arial font and 18px font size.</p>
+      <div class="child">
+        <p>This text is in the child element and should inherit the font and font size from its parent, but also has a bold font weight.</p>
+        <div class="grandchild">
+          <p>This text is in the grandchild element and should also inherit the font and font size from its parent, but should not have bold font weight.</p>
+        </div>
+      </div>
+      <div class="force-inherit">
+        <p>This text is in the force-inherit element and has Arial font and 16px font size, even though those properties have been explicitly set on its parent element and should not be inherited. This is achieved using the !inherit keyword.</p>
+      </div>
+    </div>
+  </body>
+</html>

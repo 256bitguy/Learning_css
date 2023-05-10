@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Attribute Presence Selector Example</title>
+    <style>
+      /* Select all img elements with an alt attribute */
+      img[alt] {
+        
+         border: 1px solid ;
+        border-radius: 80px;
+      }
+       
+      /* Select all input elements with a required attribute */
+      input[required] {
+        border: 2px solid red;
+        border-radius: 1180px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Attribute Presence Selector Example</h1>
+    <img src="bikku.jpg" alt="Example Image" width="100px"  >
+    <img src="nobia.jpg"  alt="Example Image" width="100px" height="100px">
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

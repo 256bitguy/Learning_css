@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Using calc() in CSS</title>
+  <style>
+    /* Set the width of the container to 80% of the viewport width minus 20 pixels */
+    .container {
+      width: calc(100vw-10vw);
+      background-color: lightblue;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    
+    /* Set the height of the image to half of the container's width */
+    img {
+      height: calc(100% * (80vw - 20px));
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Using calc() in CSS</h1>
+    <img src="bikku.jpg" alt="Example Image">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sagittis nulla. Praesent finibus felis non lectus viverra, sed dictum odio malesuada. Etiam eu velit arcu. Mauris volutpat, lacus at pellentesque hendrerit, velit purus maximus velit, non maximus magna nulla eget augue. Morbi eu est luctus, cursus metus sit amet, aliquam risus. Donec ac elit tristique, ultrices diam ac, faucibus justo. Sed hendrerit, tellus quis feugiat volutpat, ex purus blandit elit, eu mollis velit sem sit amet odio. Etiam vel quam eget massa gravida facilisis in ac magna. </p>
+  </div>
+</body>
+</html>

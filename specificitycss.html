@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example</title>
+	<style>
+		/* Rule with lower specificity */
+		p {
+			color: blue;
+		}
+
+		/* Rule with higher specificity */
+		#my-id  {
+			color: red !important;
+		}
+	</style>
+</head>
+<body>
+	<div id="my-id" >
+		<p >This text will be red</p>
+        <!-- here you can see that id="my-id" is a step above <p> tag so applying the 
+            properties for id will be less specific than p tag-->
+	</div>
+	<p>This text will be blue</p>
+</body>
+</html>

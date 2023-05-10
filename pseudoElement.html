@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pseudo-element Example</title>
+    <style>
+      /* Style the first letter of the first paragraph */
+      p:first-of-type::first-letter {
+        font-size: 2em;
+        font-weight: bold;
+        color: red;
+      }
+      
+      /* Style the first line of the second paragraph */
+      p:nth-of-type(2)::first-line {
+        font-size: 1.2em;
+        font-style: italic;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo-element Example</h1>
+    <p>This is the first paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>This is the second paragraph. Duis aute irure dolor in reprehfdkfdkf;kdf;sfj;skdfj;sdfj;aslk 
+        dfj;kfj;dskljf;alskjf;kldfj;aslkfj;asfjk;sdfklj;sdfkjad;skfj;enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  </body>
+</html>

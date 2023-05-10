@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Using Background Clip in CSS</title>
+  <style>
+    /* Set the background image to cover the entire element, including the padding and border */
+    .box1 {
+      background-image: url("bikku.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-clip: border-box;
+      padding: 20px;
+      border: 10px solid black;
+    }
+
+    /* Set the background image to be clipped to the content box, not extending under the padding or border */
+    .box2 {
+      background-image: url("nobia.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-clip: content-box;
+      padding: 20px;
+      border: 10px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">
+    <h1>Welcome to my website</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis massa quis mi convallis, sed egestas lectus mollis.</p>
+  </div>
+
+  <div class="box2">
+    <h1>Welcome to my website</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis massa quis mi convallis, sed egestas lectus mollis.</p>
+  </div>
+</body>
+</html>
